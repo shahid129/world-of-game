@@ -120,14 +120,21 @@ h2 {
     color: brown;
 }
 
+#restart-timer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 /* timer */
 #timer {
     float: right;
-    margin-right: 50px;
-    padding: 6px 39px;
+    /* margin-right: 50px; */
+    padding: 6px 15px;
     background: brown;
     color: white;
     border-radius: 5px;
+    font-size: large;
+
 }
 
 /* win div */
