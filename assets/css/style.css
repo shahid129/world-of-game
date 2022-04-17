@@ -44,3 +44,36 @@ h1, h2, h3 {
     color: rgb(118, 107, 107);
     border-bottom: 1px solid rgb(118, 107, 107);
 }
+
+/* footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    /* border: 2px solid red; */
+    width: 100%;
+    background-color: brown;
+    
+}
+
+#footer-links {
+    display: flex;
+    /* padding: 20px 0; */
+    justify-content: center;
+}
+
+#footer-links li {
+    padding: 20px;
+    list-style-type: none;
+}
+
+#footer-links li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+#footer-links li:hover a {
+    color: wheat;
+    border-bottom: 1px solid white;
+}
