@@ -45,10 +45,89 @@ h1, h2, h3 {
     border-bottom: 1px solid rgb(118, 107, 107);
 }
 
+section {
+    background-color:whitesmoke;
+    height: 100vh;
+    display: flex;
+}
+
+#game-area {
+    margin: 0 auto;
+    padding-top: 50px;
+    line-height: 2em;
+    width: 50%;
+    height: 80%;
+    /* border: 1px solid red; */
+    background-color: white;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#game-page {
+    display: none;
+}
+
+.username {
+    margin-top: 30px;
+}
+#name, #user-input {
+    width: 50%;
+    height: 2.5em;
+    text-align: center;
+    margin: 30px;
+    line-height: 3em;
+    border: 2px solid brown;
+    border-radius: 5px;
+}
+
+h2 {
+    border-bottom: 2px solid brown;
+}
+
+#name:hover {
+    border: 2px solid green;
+}
+
+#button, #submit, #restart {
+    padding: 10px 25px;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: large;
+}
+
+/* hover effets for buttons */
+#button:hover {
+    background-color: white;
+    color: brown;
+}
+
+#submit:hover {
+    background-color: white;
+    color: brown;
+}
+
+#restart:hover {
+    background-color: white;
+    color: brown;
+}
+
+
+
+
+
 /* footer */
 footer {
     position: absolute;
-    bottom: 0;
+    /* bottom: 0; */
     /* border: 2px solid red; */
     width: 100%;
     background-color: brown;
