@@ -1,9 +1,10 @@
 // main page
-let signUp = document.getElementById('button');
+let letsPlay = document.getElementById('button');
 let welcomePage = document.getElementById('welcome-page');
 let gamePage = document.getElementById('game-page')
-signUp.addEventListener('click', showGamePage);
-signUp.addEventListener('click', showfullName);
+letsPlay.addEventListener('click', showGamePage);
+letsPlay.addEventListener('click', showfullName);
+letsPlay.addEventListener('click', timer);
 
 function showGamePage() {
     gamePage.style.display = 'block';
@@ -94,16 +95,19 @@ function restartGame() {
 }
 
 // timer
-let timeleft = 30;
-let getTimer = setInterval(function(){
-  if(timeleft === 0){
-    clearInterval(getTimer);
-    document.getElementById("timer").innerHTML = "Time's Up";
-    submit.remove();
-    document.getElementById('win').innerHTML = `Uh-Ahh!!! ${name} </br> please try again`;
-    document.getElementById('hide').style.display = 'none';
-  } else {
-    document.getElementById("timer").innerHTML = timeleft + " seconds ";
-  }
-  timeleft -= 1;
+let timeleft = 29;
+function timer(){
+    let name = document.getElementById('name').value;
+    let getTimer = setInterval(function(){
+    if(timeleft === 0){
+        clearInterval(getTimer);
+        document.getElementById("timer").innerHTML = "Time's Up";
+        submit.remove();
+        document.getElementById('win').innerHTML = `Uh-Ahh!!! ${name} </br> please try again`;
+        document.getElementById('hide').style.display = 'none';
+    } else {
+        document.getElementById("timer").innerHTML = timeleft + " seconds ";
+    }
+    timeleft -= 1;
 }, 1000);
+}
