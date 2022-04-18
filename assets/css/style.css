@@ -208,3 +208,12 @@ footer {
         justify-content: space-around;
     }
 }
+
+@media screen and (max-width: 610px){
+    #game-area{
+        min-height: 100%;
+        overflow-y: auto;
+        width: 80%;
+        padding: 20px;
+    }
+}
