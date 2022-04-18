@@ -161,7 +161,7 @@ footer {
 }
 
 #footer-links li {
-    padding: 20px;
+    padding: 10px 20px;
     list-style-type: none;
 }
 
@@ -169,10 +169,42 @@ footer {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-
+    font-size: .8em;
 }
 
 #footer-links li:hover a {
     color: wheat;
     border-bottom: 1px solid white;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 890px){
+    header {
+        display: inline-block;
+    }
+    .navbar {
+        display: inline-flex;
+    }
+    #logo{
+        padding-left: 1rem;
+    }
+}
+
+/* under 420px */
+@media screen and (max-width: 465px){
+    .navbar {
+        display: block;
+    }
+    .navbar li {
+        padding: 5px;
+    }
+    #footer-links li {
+        padding: 5px;
+        font-size: .5em;
+    }
+    #footer-links {
+        display: flex;
+        justify-content: space-around;
+    }
 }
