@@ -112,3 +112,28 @@ function timer(){
 }, 1000);
 }
 
+// disable lets play button initially
+letsPlay.disabled = true;
+
+// listen for key up
+document.getElementById('name').addEventListener('keyup', function(event) {
+    if (event.target.value === '') {
+        letsPlay.disabled = true;
+    } else {
+        letsPlay.disabled = false;
+    }
+})
+
+// disable submit button if nothing is entered
+document.getElementById('submit').disabled = true;
+
+// listen for key up to enable button
+
+document.getElementById('user-input').addEventListener('keyup', function(event){
+    if (event.target.value === 0){
+    document.getElementById('submit').disabled = true;
+    } else {
+    document.getElementById('submit').disabled = false;
+
+    }
+})
