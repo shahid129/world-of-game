@@ -50,8 +50,11 @@ function getNumber() {
 
     }else if(input < randomNum) {
         document.getElementById('hint').innerHTML = `almost there ${name}, go up a bit more!! `;
+        document.getElementById('hint').style. color = 'green'
     } else {
         document.getElementById('hint').innerHTML = `getting there ${name}, go down a bit more!!`;
+        document.getElementById('hint').style. color = 'brown'
+
     }
     count ++;
     negCount --;
