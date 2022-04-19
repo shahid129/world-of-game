@@ -55,7 +55,7 @@ function getNumber() {
     }
     count ++;
     negCount --;
-    document.getElementById('span').innerHTML = ` ${count} times`;
+    document.getElementById('submitted').innerHTML = ` ${count} times`;
     document.getElementById('chance-left').innerHTML = ` ${negCount} times`;
 
     if (count === 5) {

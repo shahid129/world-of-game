@@ -40,6 +40,10 @@ h1, h2, h3 {
     letter-spacing: .1em;
 }
 
+h3 {
+    margin-top: 30px;
+}
+
 .navbar li:hover a {
     color: rgb(118, 107, 107);
     border-bottom: 1px solid rgb(118, 107, 107);
@@ -75,17 +79,21 @@ section {
 }
 
 .username {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 #name, #user-input {
     width: 50%;
     height: 2.5em;
     text-align: center;
-    margin: 30px;
+    margin-bottom: 30px;
     line-height: 3em;
     border: 2px solid brown;
     border-radius: 5px;
 }
+
+/* #name {
+    margin-bottom: 30px;
+} */
 
 h2 {
     border-bottom: 2px solid brown;
@@ -149,7 +157,9 @@ h2 {
     font-size: 1.2em;
 }
 
-
+#fullName{
+    margin-bottom: 15px;
+}
 
 /* footer */
 footer {
@@ -248,6 +258,6 @@ footer {
 
 @media screen and (max-width: 400px){
     #game-area {
-        height: 100%;
+        height: 75%;
     }
 }

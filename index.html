@@ -34,7 +34,10 @@
         <div id="game-area">
             <div id="welcome-page">
                 <div>
-                    <h2>please enter your name</h2>
+                    <h2>Guess The Number</h2>
+                </div>
+                <div>
+                    <h3>please enter your name</h3>
                 </div>
                 <div class="username">
                     <input type="text" name="name" id="name" placeholder="Your Name" required>
@@ -58,12 +61,12 @@
                 <div>
                     <h3 id="fullName"></h3>
                 <div id="numberSubmit">
-                    <input type="number" name="number" id="user-input">
+                    <input type="number" name="number" id="user-input" placeholder="Enter a Number between 0-20">
                     <input type="submit" name="submit" id="submit" value="Submit">
                 </div>
                 <div id="hide">
                     <div id="hint"></div><br>
-                    <div> you submitted: <span id="span"></span></div>
+                    <div> you submitted: <span id="submitted"></span></div>
                     <div>Chances Left: <span id="chance-left"></span></div>
                     <div id="gameOver"></div>
                 </div>
@@ -75,8 +78,6 @@
             </div>
         </div>
     </section>
-
-
     <footer>
         <div id="footer-links">
             <ul>
@@ -94,12 +95,11 @@
                     <a href="">instagram</a>
                 </li>
             </ul>
-            </ul>
             <ul>
-            <li>
-                <a href="">youtube</a>
-            </li>
-        </ul>
+                <li>
+                    <a href="">youtube</a>
+                </li>
+            </ul>
         </div>
     </footer>
 
