@@ -95,6 +95,13 @@ h2 {
     border: 2px solid green;
 }
 
+/* flex div for input name and submit button */
+#numberSubmit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #button, #submit, #restart {
     padding: 10px 25px;
     background-color: brown;
@@ -211,10 +218,16 @@ footer {
 
 @media screen and (max-width: 610px){
     #game-area{
-        height: 50%;
+        height: 70%;
         overflow-y: auto;
         width: 80%;
         padding: 20px;
+    }
+}
+
+@media screen and (max-width: 913px){
+    #game-area{
+        height: 60%;
     }
 }
 
@@ -227,5 +240,14 @@ footer {
     }
     #timer {
         margin: 5px;
+    }
+    #game-area {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #game-area {
+        height: 100%;
     }
 }
