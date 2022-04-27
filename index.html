@@ -11,7 +11,7 @@
 <body>
     <header>
         <a id="world-of-game" href="index.html">
-            <h1 id="logo">World of Game <i class="fa-solid fa-face-thinking"></i></h1>
+            <h1 id="logo">World of Game <i class="fa-brands fa-glide-g"></i></h1>
         </a>
         <nav class="navbar">
             <ul>
@@ -54,7 +54,7 @@
 
                 </div>
             </div>    
-
+            <!-- this page loads when clicked on lets play button -->
             <div id="game-page">
                 <div>
                     <h2>Guess The Number</h2>
@@ -65,13 +65,16 @@
                     <input type="number" name="number" id="user-input" placeholder="Enter a Number between 0-20">
                     <input type="submit" name="submit" id="submit" value="Submit">
                 </div>
+                <!-- hides when win result shows up -->
                 <div id="hide">
-                    <div id="hint"></div><br>
+                    <div id="hint"></div>
                     <div> you submitted: <span id="submitted"></span></div>
                     <div>Chances Left: <span id="chance-left"></span></div>
                     <div id="gameOver"></div>
                 </div>
+                <!-- win result -->
                 <div id="win"></div>
+                <!-- restarts button and timer -->
                 <div id="restart-timer">
                     <button id="restart">restart </button>
                     <div id="timer">30 Seconds</div>
