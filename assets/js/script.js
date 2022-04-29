@@ -2,6 +2,8 @@
 let letsPlay = document.getElementById('button');
 let welcomePage = document.getElementById('welcome-page');
 let gamePage = document.getElementById('game-page')
+
+// click events for lets play button
 letsPlay.addEventListener('click', showGamePage);
 letsPlay.addEventListener('click', showfullName);
 letsPlay.addEventListener('click', timer);
@@ -31,20 +33,26 @@ console.log(randomNum)
 
 let numbers = document.querySelectorAll('.number');
 numbers.forEach(number => {
-    number.addEventListener('click', function bara(event){
+    number.addEventListener('click', function guessNum(event){
         number.setAttribute('style', 'background-color:red');
         document.getElementById('numInput').innerHTML = event.target.innerHTML;
-        let heda = Number(document.getElementById('numInput').innerHTML)
-        console.log(heda)
+        let numInput = Number(document.getElementById('numInput').innerHTML)
+        console.log(numInput)
         
         let name = document.getElementById('name').value;
 
         // let x = parseFloat(document.getElementById('numInput'))
         // console.log(x);
-        if (heda === randomNum){
-            document.getElementById('showUserNum').innerHTML = `congratulations! ${name}</br> you won the game.`;
+        if (numInput === randomNum){
+            document.getElementById('win').innerHTML = `congratulations! ${name}</br> you won the game.`;
+            // hide number buttons
+            document.getElementById('numberSubmit').style.display = 'none';
+            // hide the timer 
+            document.getElementById('timer').style.display = 'none';
+            // hide this div if game wins
+             document.getElementById('hide').style.display = 'none';
 
-        }else if (heda < randomNum){
+        }else if (numInput < randomNum){
             document.getElementById('showUserNum').innerHTML = `almost there ${name}, go up a bit more!! `;
             document.getElementById('showUserNum').style. color = 'green'
 
@@ -60,12 +68,15 @@ numbers.forEach(number => {
         document.getElementById('chance-left').innerHTML = ` ${negCount} times`;
     
         if (count === 5) {
-            submit.remove();
+            document.getElementById('numberSubmit').remove();
             document.getElementById('win').innerHTML = `oppss... ${name}</br> you lost the game. </br>The secret number was ${randomNum}`;
             // hide this div if game lost
             document.getElementById('hide').style.display = 'none';
             // hide the timer 
             document.getElementById('timer').style.display = 'none';
+            // hide this div
+            document.getElementById('showUserNum').style.display = 'none'
+
     
         }
         
@@ -121,11 +132,11 @@ numbers.forEach(number => {
 // }
 
 // enter key function to user-input and submit button
-document.getElementById('user-input').addEventListener('keydown', function(event) {
-    if(event.key === 'Enter') {
-        getNumber();
-    }
-})
+// document.getElementById('user-input').addEventListener('keydown', function(event) {
+//     if(event.key === 'Enter') {
+//         getNumber();
+//     }
+// })
 
 // enter key function to main page user name and lets play button
 document.getElementById('name').addEventListener('keydown', function(event) {
@@ -153,7 +164,9 @@ function timer(){
     if(timeleft === 0){
         clearInterval(getTimer);
         document.getElementById("timer").innerHTML = "Time's Up";
-        submit.remove();
+        // submit.remove();
+        document.getElementById('numberSubmit').style.display = 'none';
+
         document.getElementById('win').innerHTML = `Uh-Ahh!!! ${name} </br> please try again`;
         document.getElementById('hide').style.display = 'none';
     } else {
@@ -176,15 +189,15 @@ document.getElementById('name').addEventListener('keyup', function(event) {
 })
 
 // disable submit button if nothing is entered
-document.getElementById('submit').disabled = true;
+// document.getElementById('submit').disabled = true;
 
 // listen for key up to enable button
 
-document.getElementById('user-input').addEventListener('keyup', function(event){
-    if (event.target.value === 0){
-    document.getElementById('submit').disabled = true;
-    } else {
-    document.getElementById('submit').disabled = false;
+// document.getElementById('user-input').addEventListener('keyup', function(event){
+//     if (event.target.value === 0){
+//     document.getElementById('submit').disabled = true;
+//     } else {
+//     document.getElementById('submit').disabled = false;
 
-    }
-})
+//     }
+// })
