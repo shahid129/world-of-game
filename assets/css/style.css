@@ -121,7 +121,7 @@ h2 {
     font-size: large;
 }
 
-/* hover effets for buttons */
+/* hover effect for buttons */
 #button:hover {
     background-color: white;
     color: brown;
@@ -197,6 +197,23 @@ footer {
     color: wheat;
     border-bottom: 1px solid white;
 }
+
+/* number layout */
+.numLayout {
+    display: flex;
+}
+
+.number {
+    width: 40px;
+    height: 40px;
+    border: 2px solid red;
+    margin: 5px;
+}
+.number:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+
 
 /* Media Queries */
 

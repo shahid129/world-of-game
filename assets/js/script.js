@@ -19,58 +19,106 @@ function showfullName() {
 }
 
 // second page
-submit.addEventListener('click', getNumber);
+// submit.addEventListener('click', getNumber);
 
-let randomNum = Math.floor(Math.random() * 20);
+// let randomNum = Math.floor(Math.random() * 20);
 
 let count = 0;
 let negCount = 5;
 
+let randomNum = Math.floor(Math.random() * 20 + 1);
+console.log(randomNum)
 
-function getNumber() {
-    let input = Number(document.getElementById('user-input').value);
+let numbers = document.querySelectorAll('.number');
+numbers.forEach(number => {
+    number.addEventListener('click', function bara(event){
+        number.setAttribute('style', 'background-color:red');
+        document.getElementById('numInput').innerHTML = event.target.innerHTML;
+        let heda = Number(document.getElementById('numInput').innerHTML)
+        console.log(heda)
+        
+        let name = document.getElementById('name').value;
 
-    // cursor stays on the input value
-    document.getElementById('user-input').focus();
+        // let x = parseFloat(document.getElementById('numInput'))
+        // console.log(x);
+        if (heda === randomNum){
+            document.getElementById('showUserNum').innerHTML = `congratulations! ${name}</br> you won the game.`;
 
-    // always give empty string on the user input
-    document.getElementById('user-input').value = '';
+        }else if (heda < randomNum){
+            document.getElementById('showUserNum').innerHTML = `almost there ${name}, go up a bit more!! `;
+            document.getElementById('showUserNum').style. color = 'green'
 
-    let submit = document.getElementById('submit')
+        }else {
+            document.getElementById('showUserNum').innerHTML = `getting there ${name}, go down a bit more!!`;
+            document.getElementById('showUserNum').style. color = 'brown'
 
-    let name = document.getElementById('name').value;
+        }
 
-    if(input === randomNum) {
-        submit.remove();
-        document.getElementById('win').innerHTML = `congratulations! ${name}</br> you won the game.`;
-        // hide this div if game wins
-        document.getElementById('hide').style.display = 'none';
-        // hide the timer 
-        document.getElementById('timer').style.display = 'none';
+        count ++;
+        negCount --;
+        document.getElementById('submitted').innerHTML = ` ${count} times`;
+        document.getElementById('chance-left').innerHTML = ` ${negCount} times`;
+    
+        if (count === 5) {
+            submit.remove();
+            document.getElementById('win').innerHTML = `oppss... ${name}</br> you lost the game. </br>The secret number was ${randomNum}`;
+            // hide this div if game lost
+            document.getElementById('hide').style.display = 'none';
+            // hide the timer 
+            document.getElementById('timer').style.display = 'none';
+    
+        }
+        
+    })
+    
+    
+})
 
-    }else if(input < randomNum) {
-        document.getElementById('hint').innerHTML = `almost there ${name}, go up a bit more!! `;
-        document.getElementById('hint').style. color = 'green'
-    } else {
-        document.getElementById('hint').innerHTML = `getting there ${name}, go down a bit more!!`;
-        document.getElementById('hint').style. color = 'brown'
 
-    }
-    count ++;
-    negCount --;
-    document.getElementById('submitted').innerHTML = ` ${count} times`;
-    document.getElementById('chance-left').innerHTML = ` ${negCount} times`;
+// function getNumber() {
+//     let input = Number(document.getElementById('user-input').value);
 
-    if (count === 5) {
-        submit.remove();
-        document.getElementById('win').innerHTML = `oppss... ${name}</br> you lost the game. </br>The secret number was ${randomNum}`;
-        // hide this div if game lost
-        document.getElementById('hide').style.display = 'none';
-        // hide the timer 
-        document.getElementById('timer').style.display = 'none';
+//     // cursor stays on the input value
+//     document.getElementById('user-input').focus();
 
-    }
-}
+//     // always give empty string on the user input
+//     document.getElementById('user-input').value = '';
+
+//     let submit = document.getElementById('submit')
+
+//     let name = document.getElementById('name').value;
+
+//     if(input === randomNum) {
+//         submit.remove();
+//         document.getElementById('win').innerHTML = `congratulations! ${name}</br> you won the game.`;
+//         // hide this div if game wins
+//         document.getElementById('hide').style.display = 'none';
+//         // hide the timer 
+//         document.getElementById('timer').style.display = 'none';
+
+//     }else if(input < randomNum) {
+//         document.getElementById('hint').innerHTML = `almost there ${name}, go up a bit more!! `;
+//         document.getElementById('hint').style. color = 'green'
+//     } else {
+//         document.getElementById('hint').innerHTML = `getting there ${name}, go down a bit more!!`;
+//         document.getElementById('hint').style. color = 'brown'
+
+//     }
+//     count ++;
+//     negCount --;
+//     document.getElementById('submitted').innerHTML = ` ${count} times`;
+//     document.getElementById('chance-left').innerHTML = ` ${negCount} times`;
+
+//     if (count === 5) {
+//         submit.remove();
+//         document.getElementById('win').innerHTML = `oppss... ${name}</br> you lost the game. </br>The secret number was ${randomNum}`;
+//         // hide this div if game lost
+//         document.getElementById('hide').style.display = 'none';
+//         // hide the timer 
+//         document.getElementById('timer').style.display = 'none';
+
+//     }
+// }
 
 // enter key function to user-input and submit button
 document.getElementById('user-input').addEventListener('keydown', function(event) {
