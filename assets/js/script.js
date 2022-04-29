@@ -21,7 +21,7 @@ function showfullName() {
 // second page
 submit.addEventListener('click', getNumber);
 
-let randomNum = Math.floor(Math.random() * 21);
+let randomNum = Math.floor(Math.random() * 20);
 
 let count = 0;
 let negCount = 5;
@@ -42,7 +42,7 @@ function getNumber() {
 
     if(input === randomNum) {
         submit.remove();
-        document.getElementById('win').innerHTML = `congratualations! ${name}</br> you won the game.`;
+        document.getElementById('win').innerHTML = `congratulations! ${name}</br> you won the game.`;
         // hide this div if game wins
         document.getElementById('hide').style.display = 'none';
         // hide the timer 

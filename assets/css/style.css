@@ -161,6 +161,8 @@ h2 {
 
 #fullName{
     margin-bottom: 15px;
+    color: white;
+    background-color: brown;
 }
 
 /* footer */
