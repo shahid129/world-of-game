@@ -34,7 +34,9 @@ console.log(randomNum)
 let numbers = document.querySelectorAll('.number');
 numbers.forEach(number => {
     number.addEventListener('click', function guessNum(event){
-        number.setAttribute('style', 'background-color:red');
+        number.setAttribute('style', 'background-color : brown');
+        number.style.color = 'white';
+
         document.getElementById('numInput').innerHTML = event.target.innerHTML;
         let numInput = Number(document.getElementById('numInput').innerHTML)
         console.log(numInput)
@@ -51,14 +53,17 @@ numbers.forEach(number => {
             document.getElementById('timer').style.display = 'none';
             // hide this div if game wins
              document.getElementById('hide').style.display = 'none';
+            //  hide hint
+            document.getElementById('hint').remove();
+
 
         }else if (numInput < randomNum){
-            document.getElementById('showUserNum').innerHTML = `almost there ${name}, go up a bit more!! `;
-            document.getElementById('showUserNum').style. color = 'green'
+            document.getElementById('hint').innerHTML = `almost there ${name}, go up a bit more!! `;
+            document.getElementById('hint').style. color = 'green'
 
         }else {
-            document.getElementById('showUserNum').innerHTML = `getting there ${name}, go down a bit more!!`;
-            document.getElementById('showUserNum').style. color = 'brown'
+            document.getElementById('hint').innerHTML = `getting there ${name}, go down a bit more!!`;
+            document.getElementById('hint').style. color = 'brown'
 
         }
 
@@ -71,11 +76,10 @@ numbers.forEach(number => {
             document.getElementById('numberSubmit').remove();
             document.getElementById('win').innerHTML = `oppss... ${name}</br> you lost the game. </br>The secret number was ${randomNum}`;
             // hide this div if game lost
-            document.getElementById('hide').style.display = 'none';
-            // hide the timer 
-            document.getElementById('timer').style.display = 'none';
+            document.getElementById('hide').remove();
             // hide this div
-            document.getElementById('showUserNum').style.display = 'none'
+            document.getElementById('hint').remove();
+            
 
     
         }
@@ -169,6 +173,8 @@ function timer(){
 
         document.getElementById('win').innerHTML = `Uh-Ahh!!! ${name} </br> please try again`;
         document.getElementById('hide').style.display = 'none';
+        document.getElementById('hint').remove();
+
     } else {
         document.getElementById("timer").innerHTML = timeleft + " seconds ";
     }

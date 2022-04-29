@@ -157,6 +157,7 @@ h2 {
 /* win div */
 #win {
     font-size: 1.2em;
+    color: brown;
 }
 
 #fullName{
@@ -206,12 +207,15 @@ footer {
 .number {
     width: 40px;
     height: 40px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin: 5px;
+    border-radius: 5px;
+    transition: transform .2s;
 }
 .number:hover {
     background-color: bisque;
     cursor: pointer;
+    transform: scale(1.1); 
 }
 
 
