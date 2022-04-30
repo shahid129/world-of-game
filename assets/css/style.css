@@ -261,20 +261,20 @@ footer {
     }
 }
 
-@media screen and (max-width: 610px){
+@media screen and (max-width: 512px){
     #game-area{
-        height: 70%;
+        /* height: 70%; */
         overflow-y: auto;
-        width: 80%;
-        padding: 20px;
+        width: 75%;
+        padding: 0 10px;
     }
 }
 
-@media screen and (max-width: 913px){
+/* @media screen and (max-width: 913px){
     #game-area{
         height: 60%;
     }
-}
+} */
 
 @media screen and (max-width: 350px){
     #restart-timer {
@@ -291,8 +291,8 @@ footer {
     }
 }
 
-@media screen and (max-width: 400px){
+/* @media screen and (max-width: 400px){
     #game-area {
         height: 75%;
     }
-}
+} */
