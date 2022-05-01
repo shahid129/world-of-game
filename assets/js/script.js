@@ -43,14 +43,16 @@ numbers.forEach(number => {
         if (numInput === randomNum){
             document.getElementById('win').innerHTML = `congratulations! ${name}</br> you won the game.`;
             // hide number buttons
-            document.getElementById('numberSubmit').style.display = 'none';
+            document.getElementById('numberSubmit').remove();
             // hide the timer 
             document.getElementById('timer').style.display = 'none';
             // hide this div if game wins
              document.getElementById('hide').style.display = 'none';
             //  hide hint
-            document.getElementById('hint').remove();
+            document.getElementById('hint').style.display = 'none';
 
+            return; // stops rest of the code if numInput === randomNum
+        
 
         }else if (numInput < randomNum){
             document.getElementById('hint').innerHTML = `almost there ${name}, go up a bit more!! `;
@@ -70,9 +72,11 @@ numbers.forEach(number => {
             document.getElementById('numberSubmit').remove();
             document.getElementById('win').innerHTML = `oppss... ${name}</br> you lost the game. </br>The secret number was ${randomNum}`;
             // hide this div if game lost
-            document.getElementById('hide').remove();
+            document.getElementById('hide').style.display = 'none';
             // hide this div
-            document.getElementById('hint').remove();
+            document.getElementById('hint').style.display = 'none';
+            document.getElementById('timer').style.display = 'none';
+
         }
   
     })
@@ -102,21 +106,22 @@ let timeleft = 29;
 function timer(){
     let name = document.getElementById('name').value;
     let getTimer = setInterval(function(){
-    if(timeleft === 0){
-        clearInterval(getTimer);
-        document.getElementById("timer").innerHTML = "Time's Up";
-        document.getElementById('numberSubmit').style.display = 'none';
-        document.getElementById('win').innerHTML = `Uh-Ahh!!! ${name} </br> please try again`;
 
-        // hide these divs
-        document.getElementById('hide').style.display = 'none';
-        document.getElementById('hint').remove();
+        if(timeleft === 0){
+            clearInterval(getTimer);
+            document.getElementById("timer").innerHTML = "Time's Up";
+            document.getElementById('numberSubmit').remove();
+            document.getElementById('win').innerHTML = `Uh-Ahh!!! ${name} </br> please try again`;
 
-    } else {
-        document.getElementById("timer").innerHTML = timeleft + " seconds ";
-    }
-    timeleft -= 1;
-}, 1000);
+            // hide these divs
+            document.getElementById('hide').style.display = 'none';
+            document.getElementById('hint').style.display = 'none';
+
+        } else {
+            document.getElementById("timer").innerHTML = timeleft + " seconds ";
+        }
+        timeleft -= 1;
+    }, 1000);
 }
 
 // disable lets play button initially
