@@ -84,7 +84,7 @@ a {
 }
 
 /* font awesome logo header */
-.fa-brands{
+.fa-solid {
     color: brown;
 }
 
@@ -281,6 +281,14 @@ footer {
     transform: scale(1.1); 
 }
 
+/* win and lost gif */
+#wingif, #lostgif {
+    display: none;
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 80px;
+}
+
 
 /* Media Queries */
 
@@ -329,8 +337,8 @@ footer {
         display: block;
     }
     .navbar li {
-        padding: 5px; */
-    }
+        padding: 5px;
+    } */
     #footer-links li {
         padding: 5px;
         font-size: .7em;
@@ -386,4 +394,4 @@ footer {
     #game-area {
         height: 75%;
     }
-} */
+} */}

@@ -50,6 +50,8 @@ numbers.forEach(number => {
              document.getElementById('hide').style.display = 'none';
             //  hide hint
             document.getElementById('hint').style.display = 'none';
+            // win git pops up
+            document.getElementById('wingif').style.display = 'block'
 
             return; // stops rest of the code if numInput === randomNum
         
@@ -76,6 +78,9 @@ numbers.forEach(number => {
             // hide this div
             document.getElementById('hint').style.display = 'none';
             document.getElementById('timer').style.display = 'none';
+            // lost gif pops up
+            document.getElementById('lostgif').style.display = 'block'
+
 
         }
   
