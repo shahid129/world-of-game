@@ -136,4 +136,13 @@ document.getElementById('name').addEventListener('keyup', function(event) {
     }
 })
 
+// burger menu
 
+let hamburger = document.querySelector('.hamburger');
+let namMenu = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    namMenu.classList.toggle('active');
+
+})
