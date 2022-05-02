@@ -139,10 +139,11 @@ document.getElementById('name').addEventListener('keyup', function(event) {
 // burger menu
 
 let hamburger = document.querySelector('.hamburger');
-let namMenu = document.querySelector('.nav-menu');
+let navMenu = document.querySelector('.nav-menu');
 
-hamburger.addEventListener('click', () => {
+hamburger.addEventListener('click', openMenu);
+function openMenu() {
     hamburger.classList.toggle('active');
-    namMenu.classList.toggle('active');
+    navMenu.classList.toggle('active');
 
-})
+}
