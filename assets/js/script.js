@@ -17,7 +17,7 @@ function showGamePage() {
 function showfullName() {
     let name = document.getElementById('name').value;
     let fullName = document.getElementById('fullName');
-    fullName.innerHTML = `Welcome to the game, ${name}`;
+    fullName.innerHTML = `Hello, ${name}`;
 }
 
 // second page

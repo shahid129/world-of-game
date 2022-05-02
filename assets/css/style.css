@@ -283,18 +283,18 @@ footer {
     .hamburger{
         display: block;
     }
-    .hamburger.active bar:nth-child(2) {
+    .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
-    .hamburger.active bar:nth-child(1) {
+    .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-    .hamburger.active bar:nth-child(3) {
+    .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 
     .nav-menu {
-        position: fixed;
+        position: absolute;
         left: -100%;
         top: 85px;
         gap: 0;
@@ -306,7 +306,7 @@ footer {
         transition: 0.5s;
     }
     .nav-item {
-        margin: 16px 0;
+        margin: 10px 0;
     }
     .nav-menu.active {
         left: 0;
@@ -327,13 +327,18 @@ footer {
     }
     #footer-links li {
         padding: 5px;
-        font-size: .5em;
+        font-size: .7em;
     }
     #footer-links {
         display: flex;
         justify-content: space-around;
     }
 
+@media screen and (max-width: 530px) {
+    .nav-menu {
+        top: 112px;
+    }
+}
 
 @media screen and (max-width: 512px){
     #game-area{
@@ -360,8 +365,11 @@ footer {
     #timer {
         margin: 5px;
     }
-    #game-area {
+    /* #game-area {
         height: 100%;
+    } */
+    .nav-menu {
+        top: 165px;
     }
 }
 
