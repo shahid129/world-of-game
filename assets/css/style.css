@@ -109,6 +109,12 @@ section {
     width: 100%;
 }
 
+/* overflow for welcome tag */
+#welcome-page, #game-page {
+    height: 90%;
+    overflow-y: auto;
+}
+
 #game-area {
     margin: 0 auto;
     /* padding-top: 50px; */
@@ -346,6 +352,9 @@ footer {
         overflow-y: auto;
         width: 75%;
         padding: 0 10px;
+    }
+    #fullName {
+        border-radius: 5px;
     }
 }
 
