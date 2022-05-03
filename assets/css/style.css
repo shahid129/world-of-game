@@ -281,8 +281,8 @@ footer {
     transform: scale(1.1); 
 }
 
-/* win and lost gif */
-#wingif, #lostgif {
+/* win lost and times up gif */
+#wingif, #lostgif, #timesUp {
     display: none;
     margin: 0 auto;
     padding-top: 10px;

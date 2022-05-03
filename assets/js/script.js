@@ -72,7 +72,7 @@ numbers.forEach(number => {
     
         if (count === 5) {
             document.getElementById('numberSubmit').remove();
-            document.getElementById('win').innerHTML = `oppss... ${name}</br> you lost the game. </br>The secret number was ${randomNum}`;
+            document.getElementById('win').innerHTML = `Oopss... ${name}</br> you lost the game. </br>The secret number was ${randomNum}`;
             // hide this div if game lost
             document.getElementById('hide').style.display = 'none';
             // hide this div
@@ -114,7 +114,10 @@ function timer(){
             clearInterval(getTimer);
             document.getElementById("timer").innerHTML = "Time's Up";
             document.getElementById('numberSubmit').remove();
-            document.getElementById('win').innerHTML = `Uh-Ahh!!! ${name} </br> please try again`;
+            document.getElementById('win').innerHTML = `Uh-oh!!! Time's Up ${name} </br> please try again`;
+
+            // pop up timer gif
+            document.getElementById('timesUp').style.display = 'block';
 
             // hide these divs
             document.getElementById('hide').style.display = 'none';
