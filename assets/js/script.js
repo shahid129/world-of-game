@@ -25,7 +25,7 @@ let count = 0;
 let negCount = 5;
 
 let randomNum = Math.floor(Math.random() * 20 + 1);
-console.log(randomNum)
+console.log(randomNum);
 
 let numbers = document.querySelectorAll('.number');
 numbers.forEach(number => {
@@ -34,8 +34,8 @@ numbers.forEach(number => {
         number.style.color = 'white';
 
         document.getElementById('numInput').innerHTML = event.target.innerHTML;
-        let numInput = Number(document.getElementById('numInput').innerHTML)
-        console.log(numInput)
+        let numInput = Number(document.getElementById('numInput').innerHTML);
+        console.log(numInput);
         
         let name = document.getElementById('name').value;
 
@@ -51,18 +51,18 @@ numbers.forEach(number => {
             //  hide hint
             document.getElementById('hint').style.display = 'none';
             // win git pops up
-            document.getElementById('wingif').style.display = 'block'
+            document.getElementById('wingif').style.display = 'block';
 
             return; // stops rest of the code if numInput === randomNum
         
 
         }else if (numInput < randomNum){
             document.getElementById('hint').innerHTML = `almost there ${name}, go up a bit more!! `;
-            document.getElementById('hint').style. color = 'green'
+            document.getElementById('hint').style. color = 'green';
 
         }else {
             document.getElementById('hint').innerHTML = `getting there ${name}, go down a bit more!!`;
-            document.getElementById('hint').style. color = 'brown'
+            document.getElementById('hint').style. color = 'brown';
         }
 
         count ++;
@@ -79,13 +79,11 @@ numbers.forEach(number => {
             document.getElementById('hint').style.display = 'none';
             document.getElementById('timer').style.display = 'none';
             // lost gif pops up
-            document.getElementById('lostgif').style.display = 'block'
-
-
-        }
+            document.getElementById('lostgif').style.display = 'block';
+        };
   
-    })
-})
+    });
+});
 
 // enter key function to main page user name and lets play button
 document.getElementById('name').addEventListener('keydown', function(event) {
@@ -95,7 +93,7 @@ document.getElementById('name').addEventListener('keydown', function(event) {
 })
 
 // restart game  with restart button
-let gameArea = document.getElementById("game-area");
+// let gameArea = document.getElementById("game-area");
 
 let restart = document.getElementById('restart');
 restart.addEventListener('click', restartGame);
@@ -139,7 +137,7 @@ document.getElementById('name').addEventListener('keyup', function(event) {
     } else {
         letsPlay.disabled = false;
     }
-})
+});
 
 // burger menu
 
