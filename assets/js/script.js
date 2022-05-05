@@ -1,7 +1,7 @@
 // main page
 let letsPlay = document.getElementById('button');
 let welcomePage = document.getElementById('welcome-page');
-let gamePage = document.getElementById('game-page')
+let gamePage = document.getElementById('game-page');
 
 // click events for lets play button
 letsPlay.addEventListener('click', showGamePage);
@@ -80,7 +80,7 @@ numbers.forEach(number => {
             document.getElementById('timer').style.display = 'none';
             // lost gif pops up
             document.getElementById('lostgif').style.display = 'block';
-        };
+        }
   
     });
 });
@@ -90,7 +90,7 @@ document.getElementById('name').addEventListener('keydown', function(event) {
     if(event.key === 'Enter') {
         showGamePage();
     }
-})
+});
 
 // restart game  with restart button
 // let gameArea = document.getElementById("game-area");
@@ -151,5 +151,4 @@ hamburger.addEventListener('click', openMenu);
 function openMenu() {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
-
 }
