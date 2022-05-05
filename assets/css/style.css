@@ -259,7 +259,7 @@ footer {
 }
 
 #footer-links li:hover a {
-    color: wheat;
+    /* color: wheat; */
     border-bottom: 1px solid white;
 }
 
@@ -386,10 +386,20 @@ footer {
     }
 }
 
-@media screen and (max-width: 313px){
+@media screen and (max-width: 325px){
     .nav-menu {
         top: 173px;
-        width: 70%;
-        margin-left: 79px;
+        /* width: 70%;
+        margin-left: 79px; */
+    }
+    #game-area{
+        overflow-y: auto;
+        width: 100%;
+        padding: 5px 10px;
+        height: 90%;
+    }
+    .number {
+        height: 30px;
+        width: 30px;
     }
 }
