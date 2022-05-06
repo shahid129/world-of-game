@@ -84,3 +84,44 @@ pops up when the user wins the game. it has a nice gif of trophy which would mak
 [Last Page](/assets/docs/lost-page.png)
 pops up on losing the game. It provides the user with enough information for losing the game. The restart button appears at the bottom as well
 </details>
+
+## TESTING
+
+Testing for this website was done by several people in several ways. My wife and my brother checked the website and suggested a lot small changes to make it look better.My mentor Ronan suggested to add buttons of numbers rather than user input.
+
+Online testing for html and css was done using the online validator websites and they are -
+
+- W3C Validator [Screenshot](assets/docs/w3c-validator.png)
+- Jigsaw css validator [Screenshot](assets/docs/CSS-Validator%20.png)
+- JS Hint [Screenshot](assets/docs/jshint.png)
+- Google Lighthouse [Screenshot](assets/docs/google-lighthouse.png)
+
+## ISSUES AND BUGS
+ - One issue was found by W3C Validator, where it says
+   - From line 67, column 21; to line 67, column 38
+   Empty heading.
+
+          <h3 id="fullName"></h3>↩
+
+    Reason: The reason I left the heading empty is because, when the user put his name in name field, this is where the user's name will pop up in the game.
+
+No errors were found in Jigsaw css validator or JS hint.
+
+## TECHNOLOGY
+- HTML
+- CSS
+- Java Script
+- Gitpod
+- Github
+- Vs Code
+- Font Awesome
+- Google Font
+- Markdown
+- Balsamic
+
+Balsamic wireframe was used to make the basic layout planning of the pages. Images of balsamic wireframe for laptop and mobile are -
+
+[Laptop](assets/docs/balsamic-laptop.png)
+
+[Mobile](assets/docs/balsamic-mobile.png)
+
