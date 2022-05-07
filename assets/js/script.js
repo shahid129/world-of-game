@@ -42,6 +42,7 @@ numbers.forEach(number => {
         // console.log(x);
         if (numInput === randomNum){
             document.getElementById('win').innerHTML = `congratulations! ${name}</br> you won the game.`;
+            document.getElementById('win').style.color = "green"
             // hide number buttons
             document.getElementById('numberSubmit').remove();
             // hide the timer 
