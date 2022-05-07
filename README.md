@@ -116,7 +116,17 @@ Since the very begging, I had this idea about building Guess the number game. Wh
 
 > When creating the hamburger menu at the end of my project, I already gathered enough knowledge on how to do it. I had the idea of adding two icons(one with three horizontal lines and other with X) of hamburger menu on top of each other. When you click on it, one of them hides and the other one shows up and the menu appears and EUREKA ... it worked fine. But alas, there was a small glitch in it. I tried to fix it for couple of days, But I could not do it. That was the time I took help from one of the videos from youtube.
 
-The bottom line is, I love playing with codes, I love writing even wrong code. What I believe, as long as I am writing code (right or wrong) I am using my brain and enhancing the brain power to think more.
+> In the begging my code was a little bit simple, the user would enter their guess number in the game. My mentor Ronan suggested to use buttons if possible. I though that was a brilliant idea to do so. I started coding and did the layout for buttons. To get the value of each number and use it in js to compare with the random number was the difficult part for me. I was stucked there almost a week. I knew there was a small code that i was missing somewhere. 
+
+I was using this 
+
+    let numInput = Number(document.getElementById('numInput').value);
+
+Actually it would be 
+
+    let numInput = Number(document.getElementById('numInput').innerHTML);
+
+The bottom line is, I love playing with codes, I love writing even wrong codes. What I believe, as long as I am writing code (right or wrong) I am using my brain and enhancing the brain power to think more.
 
 ## TECHNOLOGY
 - HTML
