@@ -92,7 +92,7 @@ h1, h2, h3 {
 }
 
 h3 {
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 /* main section of the page */
@@ -113,7 +113,7 @@ section {
 /* game area */
 #game-area {
     margin: 0 auto;
-    padding: 50px 10px;
+    padding: 25px 10px;
     line-height: 2em;
     width: 50%;
     background-color: white;
@@ -212,9 +212,10 @@ h2 {
 }
 
 #fullName{
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     color: white;
     background-color: brown;
+    border-radius: 5px;
 }
 
 /* footer */
