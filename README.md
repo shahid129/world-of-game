@@ -170,7 +170,23 @@ The bottom line is, I love playing with codes, I love writing even wrong codes. 
 
 ## DEPLOYMENT
 
-Gitpod was used to make this project. I used Code Institute's Template for this project
+Gitpod was used to make this project. I used [Code Institute's Template](https://github.com/Code-Institute-Org/gitpod-full-template) for this project
+
+1. Click on [Code Institute's Template](https://github.com/Code-Institute-Org/gitpod-full-template) and then click on use this template button.
+2. Write the name of the project, select on PUBLIC and click Create Repository from template.
+3. Click on the green button Gitpod and gitpod will start loading. Once Gitpod is loaded, you are ready to code.
+4. Each time you write and save code you do the following -
+    - git add . 
+    - git commit -m "your message"
+    - git push
+
+Each term explained below
+
+*.git add .*  adds all your last saved codes to your repository.
+
+*git commit -m "your message"* A clear short message explaining the updates.
+
+*git push* To push all the recent changes and make it live on the page.
 
 ### Deploying on github pages
 1. Log in to Github or create an account.
@@ -179,6 +195,22 @@ Gitpod was used to make this project. I used Code Institute's Template for this 
 4. On the left hand side select Pages.
 5. Under Source click dropdown menu and select Main.
 6. Once the selection is done, the page will refresh automatically, which means the page is deployed. It might take couple of minutes for the page to go live.
+
+### Deploying Locally
+
+1. Navigate to the github [Repository](https://github.com/shahid129/world-of-game#deployment).
+
+2. Click on the drop down menu CODE.
+
+3. Click on Download Zip and run locally on your machine or copy GIT URL from the HTTPS link.
+
+4. Open your favorite IDE or editor and open the terminal.
+
+5. Change the current working directory to the location where you want the cloned directory.
+
+5. Use the 'git clone' command paste and the copied git URL
+
+6. press enter to create clone on your device.
 
 ## CREDITS
 The main idea and the layout of the page was mine. I used python a couple of years ago where I built a very similar type of game. This time I thought it would be a brilliant idea to build this game from scratch and give it a life.
