@@ -152,6 +152,7 @@ section {
 
 h2 {
     border-bottom: 2px solid brown;
+    margin-bottom: 8px;
 }
 
 #name:hover {
@@ -216,6 +217,9 @@ h2 {
     color: white;
     background-color: brown;
     border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: 800;
+    letter-spacing: 0.1em;
 }
 
 /* footer */
