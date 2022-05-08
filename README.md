@@ -102,8 +102,21 @@ Online testing for html and css was done using the online validator websites and
 - JS Hint validator was used to check the js file and no errors were found. The New JavaScript features (ES6) option was ticked in the Configure menu. [Screenshot](assets/docs/jshint.png)
 - Google Lighthouse [Screenshot](assets/docs/google-lighthouse.png)
 
-## Responsiveness
+### What I did to enhance User Experience or User Interface.
 
+
+|Description| Results  |
+|--|--|
+|The user to have a clear idea of the game. | The clear idea of the game is obtained from the name of the game, "Guess The Number" |
+| Rules of the game.| Rules of the game are display in the main page. |
+|To be able to play the game on different types of device. |  Media query is added to ensure the responsiveness of the game.| 
+|Play the game without much distraction. | The page is kept clean to ensure there is no distraction. |
+| Time left to finish the game.| A timer is added to ensure user knows how much time is left to finish the game.  |
+| To know the last input number by user. | The last input number is displayed on top, and the number is also colored out to ensure user does not click the same number.  |
+|How many have the user used or left to finish the game.| With the application of js, the number of times the user have clicked and number of chances left is display at bottom.  |
+|The users name is used in all pages of the game. | With the help of js, every time the user puts his/her name, the game responds to the user by calling its name, eg hello Tom, hello Mike etc.  |
+
+## Responsiveness
 Media queries were added to the page to ensure the page is displayed correctly on different screen size devices.
 
 The breakpoints are -
@@ -124,14 +137,14 @@ The breakpoints are -
 
 ### How I encountered problems and solved them
 
-Since the very begging, I had this idea about building Guess the number game. What I did not know was that there would be a lot of ups and downs on the road. 
+Since the very beginning, I had this idea about building Guess the number game. What I did not know was that there would be a lot of ups and downs on the road. 
 >The main struggle was with the Let's Play button. I attached three functions with this button, anytime i click on it it goes to the game page. Hence User verification for that field would not work even though I added required attribute in the input field. After doing a lot of research and trying all the different ways I could think of, I came to understand that because I attached few function to the button, it loads to different things before html could validate the input field.
 
 > I, personally prefer to think and use my ideas of coding rather than looking for solution, I remember spending hours and hours on simple things like hiding a div when you click on something. It was so easy but I learnt it the hard way as I did not want look for solution.
 
 > When creating the hamburger menu at the end of my project, I already gathered enough knowledge on how to do it. I had the idea of adding two icons(one with three horizontal lines and other with X) of hamburger menu on top of each other. When you click on it, one of them hides and the other one shows up and the menu appears and EUREKA ... it worked fine. But alas, there was a small glitch in it. I tried to fix it for couple of days, But I could not do it. That was the time I took help from one of the videos from youtube.
 
-> In the begging my code was a little bit simple, the user would enter their guess number in the game. My mentor Ronan suggested to use buttons if possible. I though that was a brilliant idea to do so. I started coding and did the layout for buttons. To get the value of each number and use it in js to compare with the random number was the difficult part for me. I was stucked there almost a week. I knew there was a small code that i was missing somewhere. 
+> In the begging my code was a little bit simple, the user would enter their guess number in the game. My mentor Ronan suggested to use buttons if possible. I though that was a brilliant idea to do so. I started coding and did the layout for buttons. To get the value of each number and use it in js to compare with the random number was the difficult part for me. I was stucked there almost a week. I knew that, there was a small piece code that i was missing somewhere. 
 
 I was using this 
 
