@@ -8,6 +8,7 @@
 - [Design](#design)
 - [Features](#features)
 - [Testing](#testing)
+- [Responsiveness](#responsiveness)
 - [Technology](#echnology)
 - [Resources](#resources)
 - [Deployment](#deployment) 
@@ -100,6 +101,26 @@ Online testing for html and css was done using the online validator websites and
 - Jigsaw css validator was used to validate css file and no errors were found. [Screenshot](assets/docs/CSS-Validator%20.png)
 - JS Hint validator was used to check the js file and no errors were found. The New JavaScript features (ES6) option was ticked in the Configure menu. [Screenshot](assets/docs/jshint.png)
 - Google Lighthouse [Screenshot](assets/docs/google-lighthouse.png)
+
+## Responsiveness
+
+Media queries were added to the page to ensure the page is displayed correctly on different screen size devices.
+
+The breakpoints are -
+883px, 592px, 465px, 352px, 325px
+
+|Device|Results  |
+|--|--|
+| Blackberry Z-30 | Ok  |
+| Iphone SE | Ok  |
+| Iphone XR | Ok  |
+| Iphone 12 Pro | Ok  |
+|Samsung S8 Plus | Ok  |
+| Ipad Air | Ok  |
+| Surface Pro 7 | Ok  |
+| Surface Duo  |Ok
+| Galaxy Fold | Ok  |
+| Nest Hub Max | Ok  |
 
 ### How I encountered problems and solved them
 
