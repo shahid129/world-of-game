@@ -5,7 +5,7 @@ let gamePage = document.getElementById('game-page');
 
 // click events for lets play button
 letsPlay.addEventListener('click', showGamePage);
-letsPlay.addEventListener('click', showfullName);
+letsPlay.addEventListener('click', showFullName);
 letsPlay.addEventListener('click', timer);
 
 function showGamePage() {
@@ -14,7 +14,7 @@ function showGamePage() {
 }
 
 // display user name on second page
-function showfullName() {
+function showFullName() {
     let name = document.getElementById('name').value;
     let fullName = document.getElementById('fullName');
     fullName.innerHTML = `Hello, ${name}`;
@@ -29,18 +29,16 @@ console.log(randomNum);
 
 let numbers = document.querySelectorAll('.number');
 numbers.forEach(number => {
-    number.addEventListener('click', function guessNum(event){
+    number.addEventListener('click', function guessNum(event) {
         number.setAttribute('style', 'background-color : brown');
         number.style.color = 'white';
-
         document.getElementById('numInput').innerHTML = event.target.innerHTML;
         let numInput = Number(document.getElementById('numInput').innerHTML);
         console.log(numInput);
-        
         let name = document.getElementById('name').value;
 
         // console.log(x);
-        if (numInput === randomNum){
+        if (numInput === randomNum) {
             document.getElementById('win').innerHTML = `congratulations! ${name}</br> you won the game.`;
             document.getElementById('win').style.color = "green"
             // hide number buttons
@@ -48,29 +46,27 @@ numbers.forEach(number => {
             // hide the timer 
             document.getElementById('timer').style.display = 'none';
             // hide this div if game wins
-             document.getElementById('hide').style.display = 'none';
+            document.getElementById('hide').style.display = 'none';
             //  hide hint
             document.getElementById('hint').style.display = 'none';
             // win git pops up
             document.getElementById('wingif').style.display = 'block';
-
             return; // stops rest of the code if numInput === randomNum
-        
 
-        }else if (numInput < randomNum){
+        } else if (numInput < randomNum) {
             document.getElementById('hint').innerHTML = `almost there ${name}, go up a bit more!! `;
-            document.getElementById('hint').style. color = 'green';
+            document.getElementById('hint').style.color = 'green';
 
-        }else {
+        } else {
             document.getElementById('hint').innerHTML = `getting there ${name}, go down a bit more!!`;
-            document.getElementById('hint').style. color = 'brown';
+            document.getElementById('hint').style.color = 'brown';
         }
 
-        count ++;
-        negCount --;
+        count++;
+        negCount--;
         document.getElementById('submitted').innerHTML = ` ${count} times`;
         document.getElementById('chance-left').innerHTML = ` ${negCount} times`;
-    
+
         if (count === 5) {
             document.getElementById('numberSubmit').remove();
             document.getElementById('win').innerHTML = `Oopss... ${name}</br> you lost the game. </br>The secret number was ${randomNum}`;
@@ -80,15 +76,15 @@ numbers.forEach(number => {
             document.getElementById('hint').style.display = 'none';
             document.getElementById('timer').style.display = 'none';
             // lost gif pops up
-            document.getElementById('lostgif').style.display = 'block';
+            document.getElementById('lostGif').style.display = 'block';
         }
-  
+
     });
 });
 
 // enter key function to main page user name and lets play button
-document.getElementById('name').addEventListener('keydown', function(event) {
-    if(event.key === 'Enter') {
+document.getElementById('name').addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
         showGamePage();
     }
 });
@@ -107,11 +103,11 @@ function restartGame() {
 // timer
 let timeleft = 29;
 
-function timer(){
+function timer() {
     let name = document.getElementById('name').value;
-    let getTimer = setInterval(function(){
+    let getTimer = setInterval(function () {
 
-        if(timeleft === 0){
+        if (timeleft === 0) {
             clearInterval(getTimer);
             document.getElementById("timer").innerHTML = "Time's Up";
             document.getElementById('numberSubmit').remove();
@@ -120,7 +116,7 @@ function timer(){
             // pop up timer gif
             document.getElementById('timesUp').style.display = 'block';
 
-            // hide these divs
+            // hide these div
             document.getElementById('hide').style.display = 'none';
             document.getElementById('hint').style.display = 'none';
 
@@ -135,7 +131,7 @@ function timer(){
 letsPlay.disabled = true;
 
 // listen for key up
-document.getElementById('name').addEventListener('keyup', function(event) {
+document.getElementById('name').addEventListener('keyup', function (event) {
     if (event.target.value === '') {
         letsPlay.disabled = true;
     } else {
@@ -149,6 +145,7 @@ let hamburger = document.querySelector('.hamburger');
 let navMenu = document.querySelector('.nav-menu');
 
 hamburger.addEventListener('click', openMenu);
+
 function openMenu() {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');

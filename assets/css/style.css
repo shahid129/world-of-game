@@ -270,7 +270,7 @@ footer {
 }
 
 /* win lost and times up gif */
-#wingif, #lostgif, #timesUp {
+#wingif, #lostGif, #timesUp {
     display: none;
     margin: 0 auto;
     padding-top: 10px;
@@ -281,7 +281,7 @@ footer {
 /* Media Queries */
 
 /* burger menu */
-@media screen and (max-width:860px) {
+@media screen and (max-width:883px) {
     .hamburger{
         display: block;
     }
