@@ -8,7 +8,6 @@
 - [Design](#design)
 - [Features](#features)
 - [Testing](#testing)
-- [Issues and Bugs](#issues-and-bugs)
 - [Technology](#echnology)
 - [Resources](#resources)
 - [Deployment](#deployment) 
@@ -42,9 +41,9 @@ I tried to keep the design of the game as simple as possible. Keeping a great co
 The colors used are as follows:
 - [Black](/assets/docs/black.png) is used for fonts  
 - [Brown](assets/docs/brown.png) is used for buttons and footer 
--  [Green](assets/docs/green.png) is used for hover on name input
--  [White](assets/docs/white.png) is used for text color on top of brown
--  [White Smoke](assets/docs/white-smoke.png) is used as background on the main page and button background
+- [Green](assets/docs/green.png) is used for hover on name input
+- [White](assets/docs/white.png) is used for text color on top of brown
+- [White Smoke](assets/docs/white-smoke.png) is used as background on the main page and button background
 
 Balsamic wireframe was used to make the basic layout planning of the pages for both laptop and mobile. Images of balsamic wireframes are -
 
@@ -97,21 +96,10 @@ Testing for this website was done by several people in several ways. My wife and
 
 Online testing for html and css was done using the online validator websites and they are -
 
-- W3C Validator [Screenshot](assets/docs/w3c-validator.png)
-- Jigsaw css validator [Screenshot](assets/docs/CSS-Validator%20.png)
-- JS Hint [Screenshot](assets/docs/jshint.png)
+- W3C Validator was used to check the html and no errors were found. [Screenshot](assets/docs/w3c-validator.png)
+- Jigsaw css validator was used to validate css file and no errors were found. [Screenshot](assets/docs/CSS-Validator%20.png)
+- JS Hint validator was used to check the js file and no errors were found. The New JavaScript features (ES6) option was ticked in the Configure menu. [Screenshot](assets/docs/jshint.png)
 - Google Lighthouse [Screenshot](assets/docs/google-lighthouse.png)
-
-## ISSUES AND BUGS
- - One issue was found by W3C Validator, where it says
-   - From line 67, column 21; to line 67, column 38
-   Empty heading.
-
-          <h3 id="fullName"></h3>↩
-
-    Reason: The reason I left the heading empty is because, when the user put his name in name field, this is where the user's name will pop up in the game.
-
-No errors were found in Jigsaw css validator or JS hint.
 
 ### How I encountered problems and solved them
 
