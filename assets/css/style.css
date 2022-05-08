@@ -380,3 +380,25 @@ footer {
         width: 30px;
     }
 }
+
+/* about page */
+
+.mainContainer{
+    background-color:whitesmoke;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    
+}
+.containerAbout, .about {
+    /* display: flex; */
+    width: 40%;
+    height: 80%;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
