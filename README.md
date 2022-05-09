@@ -91,16 +91,23 @@ pops up when the user wins the game. it has a nice gif of trophy which would mak
 pops up on losing the game. It provides the user with enough information for losing the game. The restart button appears at the bottom as well
 </details>
 
+<details>
+<summary>About</summary>
+
+[About](/assets/docs/about-page.png)
+page has the same layout as the main page. Maintaining consistency between all pages was of the main objective. About Page gives a brief description about me and the game.
+</details>
+
 ## TESTING
 
 Testing for this website was done by several people in several ways. My wife and my brother checked the website and suggested a lot small changes to make it look better.My mentor Ronan suggested to add buttons of numbers rather than user input.
 
 Online testing for html and css was done using the online validator websites and they are -
 
-- W3C Validator was used to check the html and no errors were found. [Screenshot](assets/docs/w3c-validator.png)
-- Jigsaw css validator was used to validate css file and no errors were found. [Screenshot](assets/docs/CSS-Validator%20.png)
-- JS Hint validator was used to check the js file and no errors were found. The New JavaScript features (ES6) option was ticked in the Configure menu. [Screenshot](assets/docs/jshint.png)
-- Google Lighthouse [Screenshot](assets/docs/google-lighthouse.png)
+- W3C Validator was used to check the html and no errors were found. [Home Page](assets/docs/w3c-validator.png) and [About Page](assets/docs/about-html-validator.png)
+- Jigsaw css validator was used to validate css file and no errors were found. [Home Page](assets/docs/CSS-Validator%20.png) and [About Page](assets/docs/about-css-validator.png)
+- JS Hint validator was used to check the js file and no errors were found. The New JavaScript features (ES6) option was ticked in the Configure menu. [Script.js](assets/docs/jshint.png) and [BurgerMenu.js](assets/docs/burgerMenu-js.png)
+- Google Lighthouse [Home Page](assets/docs/google-lighthouse.png) and [About Page](assets/docs/about-lighthouse.png)
 
 ### What I did to enhance User Experience or User Interface.
 
