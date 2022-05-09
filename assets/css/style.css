@@ -39,7 +39,6 @@ a {
 }
 
 .nav-link {
-    /* transition: 0.7s; */
     text-transform: uppercase;
 }
 
@@ -87,7 +86,9 @@ a {
     color: brown;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     letter-spacing: .1em;
 }
 
@@ -97,7 +98,7 @@ h3 {
 
 /* main section of the page */
 section {
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -118,11 +119,11 @@ section {
     width: 50%;
     background-color: white;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
-    rgba(0, 0, 0, 0.12) 0px -12px 30px,
-    rgba(0, 0, 0, 0.12) 0px 4px 6px, 
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, 
-    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
     position: relative;
     display: flex;
     align-items: stretch;
@@ -140,7 +141,8 @@ section {
     margin-top: 15px;
 }
 
-#name, #user-input {
+#name,
+#user-input {
     width: 50%;
     height: 2.5em;
     text-align: center;
@@ -166,7 +168,9 @@ h2 {
     align-items: center;
 }
 
-#button, #submit, #restart {
+#button,
+#submit,
+#restart {
     padding: 10px 25px;
     background-color: brown;
     color: white;
@@ -212,8 +216,7 @@ h2 {
     color: brown;
 }
 
-#fullName{
-    /* margin-bottom: 15px; */
+#fullName {
     color: white;
     background-color: brown;
     border-radius: 5px;
@@ -226,7 +229,7 @@ h2 {
 footer {
     position: absolute;
     width: 100%;
-    background-color: brown; 
+    background-color: brown;
 }
 
 #footer-links {
@@ -274,7 +277,9 @@ footer {
 }
 
 /* win lost and times up gif */
-#wingif, #lostGif, #timesUp {
+#winGif,
+#lostGif,
+#timesUp {
     display: none;
     margin: 0 auto;
     padding-top: 10px;
@@ -283,29 +288,27 @@ footer {
 
 /* about page */
 
-.mainContainer{
+.mainContainer {
     display: flex;
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     align-items: center;
     justify-content: center;
     column-gap: 30px;
-    
-    
 }
-.containerAbout, .about {
-    /* display: flex; */
+
+.containerAbout,
+.about {
     width: 40%;
     height: 80%;
-    /* border: 1px solid black; */
     align-items: center;
     justify-content: center;
     padding: 20px 30px;
     overflow-y: auto;
-    box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, 
-                rgb(0 0 0 / 12%) 0px -12px 30px, 
-                rgb(0 0 0 / 12%) 0px 4px 6px, 
-                rgb(0 0 0 / 17%) 0px 12px 13px, 
-                rgb(0 0 0 / 9%) 0px -3px 5px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px,
+        rgb(0 0 0 / 12%) 0px -12px 30px,
+        rgb(0 0 0 / 12%) 0px 4px 6px,
+        rgb(0 0 0 / 17%) 0px 12px 13px,
+        rgb(0 0 0 / 9%) 0px -3px 5px;
     border-radius: 10px;
     background: white;
 }
@@ -326,15 +329,18 @@ footer {
 
 /* burger menu */
 @media screen and (max-width:883px) {
-    .hamburger{
+    .hamburger {
         display: block;
     }
+
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
+
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
+
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
@@ -365,73 +371,77 @@ footer {
 }
 
 /* under 420px */
-@media screen and (max-width: 465px){
+@media screen and (max-width: 465px) {
     #footer-links li {
         padding: 5px;
         font-size: .7em;
     }
+
     #footer-links {
         display: flex;
         justify-content: space-around;
     }
 }
-    
+/* Screen under 592px */
 @media screen and (max-width: 592px) {
     .nav-menu {
         top: 122px;
     }
 
-    #game-area{
+    #game-area {
         overflow-y: auto;
         width: 75%;
     }
+
     #fullName {
         border-radius: 5px;
     }
+
     .mainContainer {
         flex-direction: column;
-        /* row-gap: 20px; */
         height: 100%;
         margin: 20px 0;
     }
 
-    .containerAbout, .about {
+    .containerAbout,
+    .about {
         width: 90%;
         margin-top: 20px;
     }
 }
- 
-@media screen and (max-width: 352px){
+
+@media screen and (max-width: 352px) {
     #restart-timer {
         display: grid;
     }
+
     #restart {
         margin: 5px;
     }
+
     #timer {
         margin: 5px;
     }
+
     .nav-menu {
         top: 170px;
     }
 }
 
-@media screen and (max-width: 325px){
+@media screen and (max-width: 325px) {
     .nav-menu {
         top: 173px;
     }
-    #game-area{
+
+    #game-area {
         overflow-y: auto;
         width: 100%;
         padding: 5px 10px;
         height: 90%;
     }
+
     .number {
         height: 30px;
         width: 30px;
     }
 }
-
-
-
-

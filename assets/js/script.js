@@ -25,8 +25,6 @@ let count = 0;
 let negCount = 5;
 
 let randomNum = Math.floor(Math.random() * 20 + 1);
-console.log(randomNum);
-
 let numbers = document.querySelectorAll('.number');
 numbers.forEach(number => {
     number.addEventListener('click', function guessNum(event) {
@@ -34,10 +32,8 @@ numbers.forEach(number => {
         number.style.color = 'white';
         document.getElementById('numInput').innerHTML = event.target.innerHTML;
         let numInput = Number(document.getElementById('numInput').innerHTML);
-        console.log(numInput);
         let name = document.getElementById('name').value;
 
-        // console.log(x);
         if (numInput === randomNum) {
             document.getElementById('win').innerHTML = `congratulations! ${name}</br> you won the game.`;
             document.getElementById('win').style.color = "green"
@@ -50,7 +46,7 @@ numbers.forEach(number => {
             //  hide hint
             document.getElementById('hint').style.display = 'none';
             // win git pops up
-            document.getElementById('wingif').style.display = 'block';
+            document.getElementById('winGif').style.display = 'block';
             return; // stops rest of the code if numInput === randomNum
 
         } else if (numInput < randomNum) {
@@ -90,8 +86,6 @@ document.getElementById('name').addEventListener('keydown', function (event) {
 });
 
 // restart game  with restart button
-// let gameArea = document.getElementById("game-area");
-
 let restart = document.getElementById('restart');
 restart.addEventListener('click', restartGame);
 
