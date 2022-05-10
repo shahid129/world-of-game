@@ -324,6 +324,12 @@ footer {
     text-transform: none;
 }
 
+/* gif for about us page */
+.aboutGif{
+    width: 40px;
+    color: brown;
+    position: absolute;
+}
 
 /* Media Queries */
 
