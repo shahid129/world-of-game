@@ -9,8 +9,7 @@
 - [Features](#features)
 - [Testing](#testing)
 - [Responsiveness](#responsiveness)
-- [Technology](#echnology)
-- [Resources](#resources)
+- [Technology](#technology)
 - [Deployment](#deployment) 
 - [Credits](#credits)
 - [Acknowledgement](#acknowledgement)
@@ -151,7 +150,7 @@ Since the very beginning, I had this idea about building Guess the number game. 
 
 > When creating the hamburger menu at the end of my project, I already gathered enough knowledge on how to do it. I had the idea of adding two icons(one with three horizontal lines and other with X) of hamburger menu on top of each other. When you click on it, one of them hides and the other one shows up and the menu appears and EUREKA ... it worked fine. But alas, there was a small glitch in it. I tried to fix it for couple of days, But I could not do it. That was the time I took help from one of the videos from youtube.
 
-> In the begging my code was a little bit simple, the user would enter their guess number in the game. My mentor Ronan suggested to use buttons if possible. I though that was a brilliant idea to do so. I started coding and did the layout for buttons. To get the value of each number and use it in js to compare with the random number was the difficult part for me. I was stucked there almost a week. I knew that, there was a small piece code that i was missing somewhere. 
+> In the beginning, my code was a little bit simple, the user would enter their guess number in the game. My mentor Ronan suggested to use buttons if possible. I though that was a brilliant idea to do so. I started coding and did the layout for buttons. To get the value of each number and use it in js to compare with the random number was the difficult part for me. I was stucked there almost a week. I knew that, there was a small piece code that i was missing somewhere. 
 
 I was using this 
 
@@ -166,6 +165,7 @@ The bottom line is, I love playing with codes, I love writing even wrong codes. 
 ## TECHNOLOGY
 - HTML
 - CSS
+- Flexbox
 - Java Script
 - Gitpod
 - Github
@@ -215,12 +215,12 @@ Each term explained below
 
 5. Change the current working directory to the location where you want the cloned directory.
 
-5. Use the 'git clone' command paste and the copied git URL
+5. Use the 'git clone' command and paste the copied git URL.
 
 6. press enter to create clone on your device.
 
 ## CREDITS
-The main idea and the layout of the page was mine. I used python a couple of years ago where I built a very similar type of game. This time I thought it would be a brilliant idea to build this game from scratch and give it a life.
+The main idea and the layout of the page was mine. I used python a couple of years ago where I built a very similar type of game. Thereby I thought it would be a brilliant idea to build this game from scratch and give it a life.
 
 >The Favicon for this project was made from [Favicon](https://favicon.io/)
 
@@ -243,4 +243,4 @@ The main idea and the layout of the page was mine. I used python a couple of yea
 > I would like to thank my tutor, Kasia, and my mentor Ronan, for their invaluable help and guidance throughout the process. The slack group Jan-2022-lwetb, and all the fellow mates from slack
 
 # THANK YOU
-Thanks to my fellow slackers for reviewing my project and a very special thank you to my mentor Ronan, for his invaluable advice and resources throughout the development of this project.
+Thanks to my fellow slackers for reviewing my project and a very special thank you to my mentor Ronan, for his invaluable advice and resources throughout the development of this project. SPECIAL THANKS TO MY WIFE FOR BUYING ME ALL THE TIME IN THE WORLD TO DO THE COURSE AND THE PROJECTS.
