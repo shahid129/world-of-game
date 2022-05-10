@@ -45,11 +45,17 @@ The colors used are as follows:
 - [White](assets/docs/white.png) is used for text color on top of brown
 - [White Smoke](assets/docs/white-smoke.png) is used as background on the main page and button background
 
-Balsamic wireframe was used to make the basic layout planning of the pages for both laptop and mobile. Images of balsamic wireframes are -
+Balsamic wireframe was used to make the basic layout and planning of the pages for both laptop and mobile. Images of balsamic wireframes are -
 
-[Laptop](assets/docs/balsamic-laptop.png)
+[Home Page Laptop](assets/docs/balsamic-laptop.png)
 
-[Mobile](assets/docs/balsamic-mobile.png)
+[Home Page Mobile](assets/docs/balsamic-mobile.png)
+
+[About Page Laptop](assets/docs/BalsamiAbout-laptop.png)
+
+[About Page Mobile](assets/docs/BalsamiAbout-mobile.png)
+
+
 
 ## Font
 I used Cormorant Garamond font throughout the page and as a fallback option I used Serif. The reason for choosing this font is that it stands out well enough against the background give it a clean and nice look.
