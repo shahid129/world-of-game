@@ -393,8 +393,8 @@ footer {
     }
 
     .number {
-        height: 30px;
-        width: 30px;
+        height: 37px;
+        width: 37px;
     }
 }
 /* Screen under 592px */
@@ -453,5 +453,10 @@ footer {
         width: 100%;
         padding: 5px 10px;
         height: 90%;
+    }
+
+    .number {
+        height: 30px;
+        width: 30px;
     }
 }

@@ -78,9 +78,7 @@ numbers.forEach(number => {
             document.getElementById('lostGif').style.display = 'block';
             // hide the lost message
             document.getElementById('lostMsg').style.display = 'none';
-
         }
-
     });
 });
 
@@ -112,9 +110,6 @@ function timer() {
             document.getElementById("timer").innerHTML = "Time's Up";
             document.getElementById('numberSubmit').remove();
             document.getElementById('lostMsg').innerHTML = `Uh-oh!!! Time's Up ${name} </br> please try again`;
-
-            // pop up timer gif
-            // document.getElementById('timesUp').style.display = 'block';
 
             // hide these div
             document.getElementById('hide').style.display = 'none';
