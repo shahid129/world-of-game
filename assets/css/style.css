@@ -376,7 +376,7 @@ footer {
     }
 }
 
-/* under 420px */
+/* under 465px */
 @media screen and (max-width: 465px) {
     #footer-links li {
         padding: 5px;
@@ -386,6 +386,15 @@ footer {
     #footer-links {
         display: flex;
         justify-content: space-around;
+    }
+
+    .gameTitle {
+        font-size: 1.3em;
+    }
+
+    .number {
+        height: 30px;
+        width: 30px;
     }
 }
 /* Screen under 592px */
@@ -444,10 +453,5 @@ footer {
         width: 100%;
         padding: 5px 10px;
         height: 90%;
-    }
-
-    .number {
-        height: 30px;
-        width: 30px;
     }
 }
